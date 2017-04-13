@@ -1,0 +1,17 @@
+<fieldset class="form-group">
+  <legend>
+    <h2> <%= obj.title %> </h2>
+  </legend>
+
+  <div id="form-content-region"></div>
+  
+  <% if( obj.footer ) { %>
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-5 text-right">
+        <% obj.buttons.forEach( ( button, index, arr ) => { %>
+          <button name="<%= button.name %>"  type="<%= button.type %>"> <%= button.text %> </button>
+        <% } ) %>
+      </div>
+    </div>
+  <% } %>
+</fieldset>

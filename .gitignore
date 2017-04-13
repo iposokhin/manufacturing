@@ -1,0 +1,3 @@
+node_modules/
+planning/prod/public/*
+!planning/prod/public/index.html

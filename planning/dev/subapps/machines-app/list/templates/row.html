@@ -1,0 +1,18 @@
+<td> <%= name %> </td>
+<td> <%= inventaryNumber %> </td>
+<td>
+  <% if ( availableOperations.length ) { %>
+    <ul>
+      <% _.each( availableOperations, ( operation, index, list ) => { %>
+        <li> <%= operation.name %> </li>
+      <% } ); %>   
+    </ul>
+  <% } else { %>
+    No available operations
+  <% } %>
+</td>
+<td> 
+  <button class="delete pull-right btn btn-default">
+    <span class="glyphicon glyphicon-remove"></span>
+  </button>
+</td>

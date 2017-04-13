@@ -1,0 +1,47 @@
+{
+  "name": "planning",
+  "version": "1.0.0",
+  "main": "app.js",
+  "keywords": [
+    "planning",
+    "application"
+  ],
+  "author": "ip",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "backbone.marionette": "^3.1.0",
+    "backbone.syphon": "^0.7.0",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "chosen-js": "^1.6.2",
+    "errorhandler": "^1.5.0",
+    "express": "^4.14.0",
+    "express-validator": "^3.1.2",
+    "jquery": "^3.1.1",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.7",
+    "path": "^0.12.7",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.2",
+    "file-loader": "^0.10.0",
+    "nodemon": "^1.11.0",
+    "style-loader": "^0.13.1",
+    "underscore-template-loader": "^0.7.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "start-webpack": "cd planning && start \"WEBPACK\" webpack",
+    "start-nodemon": "cd planning/prod && start \"NODEMON\" nodemon server.js",
+    "start-mongod": "cd C:/mongodb/bin && start \"MONGOD\" mongod --storageEngine=mmapv1 --config C:/mongodb/mongodb.config",
+    "start": "npm run start-webpack && npm run start-mongod && npm run start-nodemon"
+  },
+  "description": ""
+}

@@ -1,0 +1,12 @@
+<% _.each( obj.allOperations, ( item ) => { %>
+	<option value="<%= item._id %>"
+
+    <% if ( _.find( obj.alreadySelected, ( el ) => { %>
+      <% return el._id === item._id %>
+    <% } ) ) { %>
+      selected
+    <% } %>
+  >
+    <%= item.name %>
+  </option>	
+<% } ) %>
